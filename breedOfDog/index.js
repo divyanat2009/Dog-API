@@ -1,7 +1,7 @@
 
 function renderDogImage(dogImage)
 {
-  if(!dogImage) //if false
+  if(!dogImage) 
   {
     $("#breedNameDiv").html(`<h2><font color="red">Breed not found!</font></h2>`);
     return;
@@ -13,7 +13,7 @@ function dogImageByBreed(userInput) {
   fetch(`https://dog.ceo/api/breed/${userInput}/images/random`)
   .then(response =>
     {
-      if(!response.ok) //if response.status != 200
+      if(!response.ok) 
       {
         return false;
       }
@@ -23,7 +23,7 @@ function dogImageByBreed(userInput) {
       } 
     })
   .then(response => {
-    if (!response) //if false
+    if (!response) 
     { 
       renderDogImage(false) 
     } 
