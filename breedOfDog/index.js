@@ -30,8 +30,9 @@ function dogImageByBreed(userInput) {
     else 
     { 
       renderDogImage(response.message) 
-    }
-   });
+    }    
+   })
+  .catch(error=> alert('Something went wrong. Try again later.'));
   
   }
 
