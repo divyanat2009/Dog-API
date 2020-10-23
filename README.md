@@ -1,1 +1,2 @@
 "# Dog-API" 
+Get request 
